@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Tech Solutions | Digitale Innovationen</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">ApexTech</div>
+            <nav class="space-x-6 text-sm font-medium">
+                <a href="#services" class="hover:text-blue-600 transition">Leistungen</a>
+                <a href="#about" class="hover:text-blue-600 transition">Über uns</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Digitale Lösungen für die Zukunft deines Unternehmens</h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-8">Wir entwickeln maßgeschneiderte Software und moderne Webanwendungen, die Ihr Business aufs nächste Level heben.</p>
+            <a href="#contact" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">Jetzt Beratung anfordern</a>
+        </div>
+    </section>
+
+    <!-- Leistungen -->
+    <section id="services" class="py-16 max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Unsere Leistungen</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">1</div>
+                <h3 class="text-xl font-semibold mb-2">Webentwicklung</h3>
+                <p class="text-gray-600 text-sm">Moderne, schnelle und responsive Websites, optimiert für Suchmaschinen und mobile Geräte.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">2</div>
+                <h3 class="text-xl font-semibold mb-2">Cloud Integration</h3>
+                <p class="text-gray-600 text-sm">Sichere Skalierung Ihrer Daten und Anwendungen in modernen Cloud-Infrastrukturen.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">3</div>
+                <h3 class="text-xl font-semibold mb-2">IT-Beratung</h3>
+                <p class="text-gray-600 text-sm">Strategische Analyse und Beratung zur Digitalisierung Ihrer Geschäftsprozesse.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Über uns -->
+    <section id="about" class="bg-white py-16 border-t border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Über Apex Tech Solutions</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Gegründet im Jahr 2024 hilft Apex Tech Solutions kleinen und mittelständischen Unternehmen dabei, die Chancen der Digitalisierung voll auszuschöpfen. Unser hochspezialisiertes Team kombiniert Kreativität mit technischer Exzellenz.
+            </p>
+        </div>
+    </section>
+
+    <!-- Kontaktformular -->
+    <section id="contact" class="py-16 max-w-xl mx-auto px-4 w-full">
+        <h2 class="text-3xl font-bold text-center mb-8">Kontaktieren Sie uns</h2>
+        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Vielen Dank für Ihre Nachricht!');">
+            <div>
+                <label class="block text-sm font-medium mb-1">Name</label>
+                <input type="text" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
+            </div>
+            <div>
+                <label class="block text-sm font-medium mb-1">E-Mail</label>
+                <input type="email" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none">
+            </div>
+            <div>
+                <label class="block text-sm font-medium mb-1">Nachricht</label>
+                <textarea rows="4" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition">Nachricht senden</button>
+        </form>
+    </section>
+
+    <!-- Footer mit Impressum -->
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 text-center text-sm space-y-4">
+            <p>&copy; 2026 Apex Tech Solutions GmbH. Alle Rechte vorbehalten.</p>
+            <div class="text-xs text-gray-500">
+                <p><strong>Impressum (Musterdaten):</strong> Apex Tech Solutions GmbH | Musterstraße 12, 10115 Berlin</p>
+                <p>Geschäftsführung: Max Mustermann | E-Mail: info@apextech-example.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
